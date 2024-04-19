@@ -4,8 +4,8 @@ echo -e "\e[1m\e[32m1. Updating the server, installing docker.. \e[0m"
 echo "======================================================"
 sudo apt update && sudo apt upgrade -y
 sudo apt install docker.io -y
-mkdir -p ~/data/arbitrum
-chmod -fR 777 ~/data/arbitrum
+mkdir -p ~/mnt/d/data/arbitrum
+chmod -fR 777 ~/mnt/d/data/arbitrum
 
 if [ ! $L1URL ]; then
 	read -p "Enter your L1 URL: " L1URL
